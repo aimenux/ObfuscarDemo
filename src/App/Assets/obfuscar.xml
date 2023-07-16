@@ -2,7 +2,7 @@
 <Obfuscator>
     <Module file="$(InPath)\App.dll" />
     <Var name="InPath" value=".\bin\Release\net6.0" />
-    <Var name="OutPath" value="$(InPath)\Obfuscar" />
+    <Var name="OutPath" value="$(InPath)\Assets" />
     <Var name="KeepPublicApi" value="false" />
     <Var name="HidePrivateApi" value="true" />
 </Obfuscator>

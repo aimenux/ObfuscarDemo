@@ -12,7 +12,7 @@ public class CalculatorTests
     public void Should_Min_Be_Valid(decimal number1, decimal number2, decimal expectedMin)
     {
         // arrange
-        var calculator = new SuperCalculator();
+        var calculator = new Calculator();
 
         // act
         var min = calculator.Min(number1, number2);
@@ -28,7 +28,7 @@ public class CalculatorTests
     public void Should_Max_Be_Valid(decimal number1, decimal number2, decimal expectedMax)
     {
         // arrange
-        var calculator = new SuperCalculator();
+        var calculator = new Calculator();
 
         // act
         var max = calculator.Max(number1, number2);
