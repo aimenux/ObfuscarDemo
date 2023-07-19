@@ -1,6 +1,6 @@
 namespace App.Services;
 
-public interface ISuperCalculator
+public interface ISuperCalculator : ICalculator
 {
     decimal Sum(params decimal[] numbers);
 }
