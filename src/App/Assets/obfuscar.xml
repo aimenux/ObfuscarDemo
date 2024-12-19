@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <Obfuscator>
-    <Var name="InPath" value="." />
-    <Var name="OutPath" value=".\Assets" />
+    <Var name="InPath" value="bin\release\net8.0" />
+    <Var name="OutPath" value="bin\release\obfuscated" />
     <Var name="RegenerateDebugInfo" value="false" />
     <Var name="OptimizeMethods" value="true" />
     <Var name="SuppressIldasm" value="true" />
