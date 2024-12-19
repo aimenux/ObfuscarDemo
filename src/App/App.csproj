@@ -7,20 +7,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="MSBuild.Obfuscar">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
       <PackageReference Include="Obfuscar">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
     </ItemGroup>
-
-    <ItemGroup>
-      <None Update="Assets\obfuscar.xml">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </None>
-    </ItemGroup>
-
-    <Target Name="Obfuscate" AfterTargets="PostBuildEvent">
-      <Exec Command="if $(ConfigurationName) == Release $(Obfuscar) Assets\obfuscar.xml" />
-    </Target>
 
 </Project>
