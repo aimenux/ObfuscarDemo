@@ -24,9 +24,9 @@ jobs:
       run: dotnet restore
     - name: Run dotnet format
       run: dotnet format --verify-no-changes
-    - name: Build
+    - name: Build release
       run: dotnet build --no-restore -c release
-    - name: Build
+    - name: Build debug
       run: dotnet build --no-restore -c debug      
     - name: Test
       run: dotnet test --no-build -c debug
