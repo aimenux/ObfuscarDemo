@@ -1,8 +1,16 @@
 <?xml version='1.0'?>
 <Obfuscator>
-    <Module file="$(InPath)\App.dll" />
-    <Var name="InPath" value=".\bin\Release\net6.0" />
-    <Var name="OutPath" value="$(InPath)\Assets" />
+    <Var name="InPath" value="." />
+    <Var name="OutPath" value=".\Assets" />
+    <Var name="RegenerateDebugInfo" value="false" />
+    <Var name="OptimizeMethods" value="true" />
+    <Var name="SuppressIldasm" value="true" />
     <Var name="KeepPublicApi" value="false" />
     <Var name="HidePrivateApi" value="true" />
+    <Var name="HideStrings" value="true" />
+    <Var name="RenameProperties" value="true" />
+    <Var name="RenameFields" value="true" />
+    <Var name="RenameEvents" value="true" />
+    <Var name="ReuseNames" value="false" />
+    <Module file="$(InPath)\App.dll" />
 </Obfuscator>
