@@ -11,4 +11,4 @@ In this repo, i m using [obfuscar](https://github.com/obfuscar/obfuscar) in orde
 > ![ObfuscarDemo](Screenshots/ObfuscarDemo.png)
 >
 
-**`Tools`** : net 6.0, obfuscar, fluent-assertions, xunit
+**`Tools`** : net 8.0, obfuscar, fluent-assertions, xunit

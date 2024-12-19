@@ -10,11 +10,11 @@ public class Calculator : ICalculator
 {
     public decimal Min(params decimal[] numbers)
     {
-        return numbers?.Min() ?? default;
+        return numbers.Min();
     }
 
     public decimal Max(params decimal[] numbers)
     {
-        return numbers?.Max() ?? default;
+        return numbers.Max();
     }
 }

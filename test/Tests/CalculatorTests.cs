@@ -9,7 +9,7 @@ public class CalculatorTests
     [InlineData(20, 10, 10)]
     [InlineData(30, 30, 30)]
     [InlineData(40, 50, 40)]
-    public void Should_Min_Be_Valid(decimal number1, decimal number2, decimal expectedMin)
+    public void ShouldMinBeValid(decimal number1, decimal number2, decimal expectedMin)
     {
         // arrange
         var calculator = new Calculator();
@@ -20,12 +20,12 @@ public class CalculatorTests
         // assert
         min.Should().Be(expectedMin);
     }
-    
+
     [Theory]
     [InlineData(20, 10, 20)]
     [InlineData(30, 30, 30)]
     [InlineData(40, 50, 50)]
-    public void Should_Max_Be_Valid(decimal number1, decimal number2, decimal expectedMax)
+    public void ShouldMaxBeValid(decimal number1, decimal number2, decimal expectedMax)
     {
         // arrange
         var calculator = new Calculator();

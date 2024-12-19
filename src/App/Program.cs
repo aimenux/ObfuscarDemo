@@ -1,7 +1,8 @@
-﻿using App.Services;
+﻿using System.Security.Cryptography;
+using App.Services;
 
 var numbers = Enumerable.Range(0, 100)
-    .Select(x => new decimal(Random.Shared.Next()))
+    .Select(x => new decimal(RandomNumberGenerator.GetInt32(1000)))
     .ToArray();
 
 var calculator = new Calculator();

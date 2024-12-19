@@ -9,7 +9,7 @@ public class SuperCalculatorTests
     [InlineData(20, 10, 10)]
     [InlineData(30, 30, 30)]
     [InlineData(40, 50, 40)]
-    public void Should_Min_Be_Valid(decimal number1, decimal number2, decimal expectedMin)
+    public void ShouldMinBeValid(decimal number1, decimal number2, decimal expectedMin)
     {
         // arrange
         var calculator = new SuperCalculator();
@@ -20,12 +20,12 @@ public class SuperCalculatorTests
         // assert
         min.Should().Be(expectedMin);
     }
-    
+
     [Theory]
     [InlineData(20, 10, 20)]
     [InlineData(30, 30, 30)]
     [InlineData(40, 50, 50)]
-    public void Should_Max_Be_Valid(decimal number1, decimal number2, decimal expectedMax)
+    public void ShouldMaxBeValid(decimal number1, decimal number2, decimal expectedMax)
     {
         // arrange
         var calculator = new SuperCalculator();
@@ -36,12 +36,12 @@ public class SuperCalculatorTests
         // assert
         max.Should().Be(expectedMax);
     }
-    
+
     [Theory]
     [InlineData(20, 30, 50)]
     [InlineData(30, 40, 70)]
     [InlineData(40, 50, 90)]
-    public void Should_Sum_Be_Valid(decimal number1, decimal number2, decimal expectedSum)
+    public void ShouldSumBeValid(decimal number1, decimal number2, decimal expectedSum)
     {
         // arrange
         var calculator = new SuperCalculator();
